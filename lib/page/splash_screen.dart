@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:pie_cake_dark/page/home_page.dart';
 import 'package:pie_cake_dark/theme.dart';
 
 class SplashScreen extends StatelessWidget {
@@ -71,7 +72,14 @@ class SplashScreen extends StatelessWidget {
                         height: 55,
                         width: MediaQuery.of(context).size.width - (2 * 42),
                         child: RaisedButton(
-                          onPressed: () {},
+                          onPressed: () {
+                            Navigator.push(
+                              context,
+                              MaterialPageRoute(builder: (context) {
+                                return HomePage();
+                              }),
+                            );
+                          },
                           color: orangeColor,
                           shape: RoundedRectangleBorder(
                             borderRadius: BorderRadius.circular(30),

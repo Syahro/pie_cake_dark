@@ -7,6 +7,8 @@ Color darkGreyColor = Color(0XFF89898A);
 Color orangeColor = Color(0XFFFF9500);
 Color whiteColor = Color(0XFFFFFFFF);
 
+final double defaultMargin = 30.0;
+
 TextStyle titleTextStyle = GoogleFonts.poppins(
   fontSize: 24,
   fontWeight: FontWeight.w600,
